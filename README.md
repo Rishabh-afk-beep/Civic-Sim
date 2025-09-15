@@ -13,11 +13,10 @@
 - 🤖 **Binary Document Verification** - Detect fake government documents with 90%+ accuracy
 - 🕵️ **Corruption Pattern Detection** - AI-powered risk scoring and red flag analysis
 - 📊 **Government Health Dashboard** - Real-time fund allocation vs utilization tracking
-- 📡 **Real Data Integration** - Live data.gov.in API connections with 198,000+ datasets
+- 📡 **Real Data Integration** - Live data.gov.in API connections 
 
 ## 🏆 Hackathon Achievement
 
-**🥇 Winner** - [Hackathon Name] 2025  
 **🏆 Category:** Civic Innovation & AI for Social Good  
 **🎯 Impact:** Healthcare transparency solution addressing ₹86,200 Cr budget tracking
 
@@ -65,9 +64,8 @@
 ### Backend
 - **Framework:** FastAPI (Python 3.8+)
 - **AI Engine:** Google Gemini 1.5 Flash
-- **Database:** PostgreSQL
+- **Database:** SQLite
 - **APIs:** data.gov.in, Government ministry APIs
-- **ML Libraries:** scikit-learn, NLTK, pandas
 
 ### Frontend
 - **Framework:** React 18+ with TypeScript
@@ -78,7 +76,6 @@
 
 ### DevOps & Deployment
 - **Containerization:** Docker & Docker Compose
-- **Cloud:** AWS/Google Cloud Platform
 - **CI/CD:** GitHub Actions
 - **Monitoring:** Application performance tracking
 
@@ -87,7 +84,7 @@
 ### Prerequisites
 - Python 3.8+ and pip
 - Node.js 16+ and npm/yarn
-- PostgreSQL database
+- SQLite database
 - Government API access keys
 
 ### 1. Clone Repository
@@ -176,14 +173,13 @@ civicsim/
 ### Backend Environment Variables (.env)
 ```env
 # Database
-DATABASE_URL=postgresql://user:password@localhost/civicsim
+DATABASE_URL=sqlite:///./civicsim.db
 
 # AI Services
 REACT_APP_GEMINI_API_KEY=your_gemini_api_key_here
 
 # Government APIs
 DATA_GOV_IN_API_KEY=your_data_gov_in_key
-MINISTRY_API_ENDPOINTS=https://api.data.gov.in/resource/
 
 # Application
 DEBUG=True
@@ -231,11 +227,6 @@ docker-compose -f docker-compose.prod.yml up -d
 docker-compose logs -f
 ```
 
-### Manual Deployment
-1. **Backend:** Deploy FastAPI app to cloud platform
-2. **Frontend:** Build React app and serve via CDN
-3. **Database:** Set up PostgreSQL instance
-4. **Environment:** Configure production environment variables
 
 ## 📈 Performance Metrics
 
@@ -316,9 +307,10 @@ For complete API documentation, visit: `/docs` endpoint when running the backend
 
 ## 👥 Team
 
-- **[Your Name]** - Full-Stack Development & AI Integration
-- **[Partner Name]** - Frontend Development & UI/UX Design
-- **[Additional Members]** - Research & Data Analysis
+- **[Rishabh Ranjan Dangi]** - Full-Stack Development
+- **[Samanvai Chandra]** - AI Integration
+- **[Rishav Kumar]** - Frontend Development & UI/UX Design
+- **[Om Rai]** - Research & Data Analysis
 
 ## 📄 License
 
@@ -333,9 +325,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact & Support
 
-- **Email:** civicsim@example.com
-- **GitHub:** https://github.com/your-username/civicsim
-- **Demo:** https://civicsim-demo.herokuapp.com
+- **Email:** ranjanrishabh2001@gmail.com
+- **GitHub:** https://github.com/Rishabh-afk-beep/civicsim
+- **Demo:** Later
 - **Documentation:** https://docs.civicsim.org
 
 ## 🌟 Star this Repository
