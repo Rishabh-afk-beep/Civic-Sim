@@ -1,0 +1,23 @@
+{
+  "name": "civicsim",
+  "version": "1.0.0",
+  "description": "Government Transparency & Policy Simulation Platform",
+  "scripts": {
+    "build": "cd frontend/my-app && npm install && npm run build",
+    "dev": "concurrently \"cd frontend/my-app && npm start\" \"cd backend && uvicorn app.main:app --reload\"",
+    "start": "cd frontend/my-app && npm start"
+  },
+  "keywords": [
+    "government",
+    "transparency",
+    "policy",
+    "simulation",
+    "civic",
+    "democracy"
+  ],
+  "author": "CivicSim Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
